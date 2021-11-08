@@ -1,0 +1,12 @@
+// assign all custom sass variables here:
+
+$darkblue: #2B3D54;
+$lightgreen: #60A65F;
+
+@mixin mk3Normal{
+    font-family: objektiv-mk3, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
