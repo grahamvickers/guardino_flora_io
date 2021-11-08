@@ -1,0 +1,250 @@
+.hidden {
+  display: none;
+}
+
+#hiddenList {
+  display: none;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#navContainer {
+  background-color: #2B3D54;
+  height: 120px;
+}
+
+#navIcon {
+  width: 30px;
+  margin-top: 45px;
+  margin-left: 22px;
+  float: left;
+}
+
+#logo, #logo2 {
+  width: 169.4px;
+  margin-top: 41.6px;
+  margin-left: 21.3px;
+}
+
+nav {
+  background-color: #2B3D54;
+  width: 200px;
+  height: 286px;
+  position: absolute;
+}
+
+nav ul {
+  margin: 0 auto;
+  list-style: none;
+}
+
+nav ul li {
+  padding-top: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: objektiv-mk3, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: darkgray;
+}
+
+footer {
+  height: 300px;
+}
+
+#footerSignUpContainer {
+  height: 200px;
+  background-color: #60A65F;
+}
+
+#footerContainer {
+  background-color: #2B3D54;
+  height: 61px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 39px;
+}
+
+#footerContainer p {
+  padding: 0;
+  margin: 0 auto;
+  font-family: objektiv-mk3, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: white;
+}
+
+#footerSignUpContainer p {
+  margin-top: 23px;
+  font-family: objektiv-mk3, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: white;
+  margin-left: 24px;
+}
+
+#footerSignUpContainer h2 {
+  font-family: hwt-artz, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  color: #2B3D54;
+  padding-top: 23px;
+}
+
+#iconArrow {
+  width: 22px;
+  float: left;
+  margin-left: 86px;
+  margin-right: 13px;
+}
+
+.buttonSignUp {
+  border-radius: 5px;
+  background-color: #2B3D54;
+  width: 204px;
+  height: 28px;
+  border: none;
+  font-family: objektiv-mk3, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: white;
+  margin: 0 auto;
+  display: block;
+  margin-top: 25px;
+  padding-top: 8px;
+}
+
+.buttonSignUp:hover {
+  -webkit-filter: saturate(45%);
+          filter: saturate(45%);
+}
+
+#footerSignUpContainer a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.hiddenNavLogo {
+  display: none;
+}
+
+.navMobile {
+  display: none;
+}
+
+@media screen and (min-width: 428px) {
+  #footerSignUpContainer h2 {
+    text-align: left;
+    margin-left: 35px;
+  }
+  #footerSignUpContainer p {
+    text-align: left;
+    margin-left: 35px;
+    width: 343px;
+  }
+  .buttonSignUp {
+    margin-left: 35px;
+  }
+  #navIcon {
+    margin-left: 40px;
+  }
+  #logo, #logo2 {
+    margin-left: 59.3px;
+  }
+  #iconArrow {
+    margin-left: 140px;
+    margin-right: 12px;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  #footerSignUpContainer h2 {
+    margin-left: 45px;
+  }
+  #footerSignUpContainer p {
+    margin-left: 45px;
+  }
+  .buttonSignUp {
+    margin-left: 45px;
+  }
+  #navIcon {
+    margin-left: 45px;
+  }
+  #logo, #logo2 {
+    margin-left: 180px;
+  }
+  #iconArrow {
+    margin-left: 266px;
+    margin-right: 14px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #navContainer {
+    display: none;
+  }
+  .hiddenNavLogo {
+    display: block;
+  }
+  .navMobile {
+    display: block;
+  }
+  #footerSignUpContainer h2 {
+    margin-left: 165px;
+  }
+  #footerSignUpContainer p {
+    margin-left: 165px;
+  }
+  .buttonSignUp {
+    margin-left: 165px;
+  }
+  #footerContainer {
+    display: none;
+  }
+  footer {
+    height: auto;
+  }
+  #navIcon {
+    display: none;
+  }
+  #logo, #logo2 {
+    margin-left: 95.8px;
+    float: left;
+  }
+  #hiddenList {
+    display: inline;
+  }
+  nav {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    height: 120px;
+  }
+  nav ul {
+    padding-top: 48px;
+    text-align: right;
+  }
+  nav ul li {
+    padding-top: 30px;
+    display: inline;
+  }
+  nav ul li a {
+    padding-right: 30px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
