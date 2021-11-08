@@ -1,1 +1,145 @@
 // all footer styling goes here
+
+#footerSignUpContainer {
+    height: 200px;
+    background-color: $lightgreen;
+}
+
+#footerContainer {
+    background-color: $darkblue;
+    height: 61px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 39px;
+}
+
+#iconArrow {
+    width: 22px;
+    float: left;
+    margin-left: 86px;
+    margin-right: 13px;
+
+}
+
+#footerContainer p {
+    padding: 0;
+    margin: 0 auto;
+    @include mk3Normal;
+    color: white;
+
+}
+
+#footerSignUpContainer p {
+    margin-top: 23px;
+    @include mk3Normal;
+    color: white;
+    margin-left: 24px;
+}
+
+#footerSignUpContainer h2 {
+    font-family: hwt-artz, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: $darkblue;
+    padding-top: 23px;
+}
+
+
+
+.buttonSignUp {
+    border-radius: 5px;
+    background-color: $darkblue;
+    width: 204px;
+    height: 28px;
+    border: none;
+    @include mk3Normal;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    margin-top: 25px;
+    padding-top: 8px;
+
+    &:hover {
+        filter: saturate(45%);
+    }
+
+}
+
+#footerSignUpContainer a {
+    text-decoration: none;
+    text-align: center;
+}
+
+@media screen and (min-width: 428px){
+    #footerSignUpContainer h2 {
+        text-align: left;
+        margin-left: 35px;
+    
+    }
+
+    #footerSignUpContainer p {
+        text-align: left;
+        margin-left: 35px;
+        width: 343px;
+
+    }
+
+    .buttonSignUp {
+        margin-left: 35px;
+    }
+
+   
+
+    #iconArrow {
+        margin-left: 140px;
+        margin-right: 12px;
+    
+    }
+}
+
+@media screen and (min-width: 680px){
+    #footerSignUpContainer h2 {
+        margin-left: 45px;
+    
+    }
+
+    #footerSignUpContainer p {
+        margin-left: 45px;
+    }
+
+    .buttonSignUp {
+        margin-left: 45px;
+    }
+
+    
+
+    #iconArrow {
+        margin-left: 266px;
+        margin-right: 14px;
+    
+    }
+}
+
+@media screen and (min-width: 1024px){
+    #footerSignUpContainer h2 {
+        margin-left: 165px;
+    
+    }
+
+    #footerSignUpContainer p {
+        margin-left: 165px;
+    }
+
+    .buttonSignUp {
+        margin-left: 165px;
+    }
+
+    #footerContainer {
+        display: none;
+    }
+
+    footer {
+        height: auto;
+    }
+}

@@ -1,39 +1,64 @@
-.hidden {
-  display: none;
+h2 {
+  font-family: hwt-artz, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: #2B3D54;
 }
 
-#hiddenList {
-  display: none;
+h3 {
+  font-family: hwt-artz, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  color: #60A65F;
 }
 
-body {
-  padding: 0;
-  margin: 0 auto;
-  max-width: 1200px;
+p {
+  font-family: objektiv-mk3, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #3f3f3f;
 }
 
 #navContainer {
   background-color: #2B3D54;
-  height: 120px;
+  padding: 0px 40px 40px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #navIcon {
   width: 30px;
   margin-top: 45px;
-  margin-left: 22px;
+  margin-left: 42px;
   float: left;
 }
 
 #logo, #logo2 {
-  width: 169.4px;
-  margin-top: 41.6px;
-  margin-left: 21.3px;
+  width: 200px;
+  margin-top: 40px;
+  margin-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 nav {
   background-color: #2B3D54;
   width: 200px;
-  height: 286px;
+  height: 185px;
   position: absolute;
 }
 
@@ -56,11 +81,102 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: darkgray;
+  color: #60A65F;
 }
 
-footer {
-  height: 300px;
+.hiddenNavLogo {
+  display: none;
+}
+
+.navMobile {
+  display: none;
+}
+
+@media screen and (min-width: 428px) {
+  #navIcon {
+    margin-left: 40px;
+  }
+  #logo, #logo2 {
+    margin-left: 20vw;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  #navIcon {
+    margin-left: 45px;
+  }
+  #logo, #logo2 {
+    margin-left: 30vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #navContainer {
+    display: none;
+  }
+  .hiddenNavLogo {
+    display: block;
+  }
+  .navMobile {
+    display: block;
+  }
+  #navIcon {
+    display: none;
+  }
+  #logo, #logo2 {
+    margin-left: 95.8px;
+    float: left;
+  }
+  #hiddenList {
+    display: inline;
+  }
+  nav {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    height: 120px;
+  }
+  nav ul {
+    padding-top: 48px;
+    text-align: right;
+  }
+  nav ul li {
+    padding-top: 30px;
+    display: inline;
+  }
+  nav ul li a {
+    padding-right: 30px;
+  }
+}
+
+#benefitsCon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.benefit {
+  padding: 0px 0px 0px 0px;
+}
+
+.benefit img {
+  width: 50%;
+}
+
+#storeIcons img {
+  height: 80px;
+}
+
+@media screen and (min-width: 1200px) {
+  .benefit img {
+    width: 30%;
+  }
 }
 
 #footerSignUpContainer {
@@ -74,6 +190,13 @@ footer {
   margin: 0 auto;
   padding: 0;
   padding-top: 39px;
+}
+
+#iconArrow {
+  width: 22px;
+  float: left;
+  margin-left: 86px;
+  margin-right: 13px;
 }
 
 #footerContainer p {
@@ -105,13 +228,6 @@ footer {
   padding-top: 23px;
 }
 
-#iconArrow {
-  width: 22px;
-  float: left;
-  margin-left: 86px;
-  margin-right: 13px;
-}
-
 .buttonSignUp {
   border-radius: 5px;
   background-color: #2B3D54;
@@ -139,14 +255,6 @@ footer {
   text-align: center;
 }
 
-.hiddenNavLogo {
-  display: none;
-}
-
-.navMobile {
-  display: none;
-}
-
 @media screen and (min-width: 428px) {
   #footerSignUpContainer h2 {
     text-align: left;
@@ -159,12 +267,6 @@ footer {
   }
   .buttonSignUp {
     margin-left: 35px;
-  }
-  #navIcon {
-    margin-left: 40px;
-  }
-  #logo, #logo2 {
-    margin-left: 59.3px;
   }
   #iconArrow {
     margin-left: 140px;
@@ -182,12 +284,6 @@ footer {
   .buttonSignUp {
     margin-left: 45px;
   }
-  #navIcon {
-    margin-left: 45px;
-  }
-  #logo, #logo2 {
-    margin-left: 180px;
-  }
   #iconArrow {
     margin-left: 266px;
     margin-right: 14px;
@@ -195,15 +291,6 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-  #navContainer {
-    display: none;
-  }
-  .hiddenNavLogo {
-    display: block;
-  }
-  .navMobile {
-    display: block;
-  }
   #footerSignUpContainer h2 {
     margin-left: 165px;
   }
@@ -219,32 +306,20 @@ footer {
   footer {
     height: auto;
   }
-  #navIcon {
-    display: none;
-  }
-  #logo, #logo2 {
-    margin-left: 95.8px;
-    float: left;
-  }
-  #hiddenList {
-    display: inline;
-  }
-  nav {
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
-    height: 120px;
-  }
-  nav ul {
-    padding-top: 48px;
-    text-align: right;
-  }
-  nav ul li {
-    padding-top: 30px;
-    display: inline;
-  }
-  nav ul li a {
-    padding-right: 30px;
-  }
+}
+
+.hidden {
+  display: none;
+}
+
+#hiddenList {
+  display: none;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -2,6 +2,7 @@
 
 $darkblue: #2B3D54;
 $lightgreen: #60A65F;
+$darkgrey: #3f3f3f;
 
 @mixin mk3Normal{
     font-family: objektiv-mk3, sans-serif;
@@ -10,3 +11,41 @@ $lightgreen: #60A65F;
     font-size: 16px;
 }
 
+h2{
+    font-family: hwt-artz, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: $darkblue;
+}
+
+h3{
+    font-family: hwt-artz, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    color: $lightgreen;
+}
+
+p{
+    font-family: objektiv-mk3, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: $darkgrey; 
+}
+
+
+@media screen and (min-width: 428px){
+
+}
+
+@media screen and (min-width: 680px){
+    
+}
+
+@media screen and (min-width: 1200px){
+
+}
