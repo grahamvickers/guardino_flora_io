@@ -1,1 +1,36 @@
 // all styling for the body content of index.html here
+
+#benefitsCon{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.benefit {
+    padding: 0px 0px 0px 0px;
+    img{
+        width: 50%;
+    }
+}
+
+#storeIcons img{
+    height: 80px;
+}
+
+
+
+@media screen and (min-width: 428px){
+
+}
+
+@media screen and (min-width: 680px){
+
+}
+
+@media screen and (min-width: 1200px){
+    .benefit img{
+        width: 30%;
+    }
+}
+

@@ -1,1 +1,139 @@
 // all header styling goes here
+
+#navContainer {
+    background-color: $darkblue;
+    padding: 0px 40px 40px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+#navIcon {
+    width: 30px;
+    margin-top: 45px;
+    margin-left: 42px;
+    float: left;  
+}
+
+#logo, #logo2{
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+
+    background-color: $darkblue;
+    width: 200px;
+    height: 185px;
+    // padding 0
+    // margin-right: 200px;
+    // margin: 0 auto;
+    position: absolute;
+    ul {
+        margin: 0 auto;
+        list-style: none;
+            li {
+                padding-top: 30px;
+
+                a {
+                    text-decoration: none;
+                    font-family: objektiv-mk3, sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-size: 16px;
+                    color: white;
+
+                    &:hover {
+                        color: $lightgreen;
+                    }
+                }
+            }   
+    }
+    
+}
+
+.hiddenNavLogo {
+    display: none;
+}
+
+
+.navMobile {
+    display: none;
+}
+
+@media screen and (min-width: 428px){
+    #navIcon {
+        margin-left: 40px;
+    }
+
+
+    #logo, #logo2{
+        margin-left: 20vw;
+        
+        
+    }
+}
+
+@media screen and (min-width: 680px){
+    #navIcon {
+        margin-left: 45px;
+    }
+
+
+    #logo, #logo2{
+        margin-left: 30vw;
+        
+        
+    }
+}
+
+@media screen and (min-width: 1024px){
+    #navContainer {
+        display: none;
+    }
+
+    .hiddenNavLogo {
+        display: block;
+    }
+
+    .navMobile {
+        display: block;
+    }
+
+    #navIcon {
+        display: none;
+    }
+
+
+    #logo, #logo2{
+        margin-left: 95.8px;
+        float: left;   
+        
+    }
+
+    #hiddenList {
+        display: inline;
+    }
+
+    nav {
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        height: 120px;  
+
+        ul {
+            padding-top: 48px;
+            text-align: right;
+                li {
+                    padding-top: 30px;
+                    display: inline;
+                    a {
+                        padding-right: 30px;
+                    }
+                }   
+        }
+        
+    }
+}
