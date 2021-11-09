@@ -1,7 +1,7 @@
 // all footer styling goes here
 
 #footerSignUpContainer {
-    height: 200px;
+    padding: 20px 0px 20px 0px;
     background-color: $lightgreen;
 }
 
@@ -10,7 +10,7 @@
     height: 61px;
     margin: 0 auto;
     padding: 0;
-    padding-top: 39px;
+    padding-top: 40px;
 }
 
 #iconArrow {
@@ -33,16 +33,18 @@
     margin-top: 23px;
     @include mk3Normal;
     color: white;
-    margin-left: 24px;
+    margin-left: 40px;
+    margin-right: 40px;
+
 }
 
 #footerSignUpContainer h2 {
+    margin-left: 40px;
+    margin-right: 40px;
     font-family: hwt-artz, sans-serif;
     font-weight: 700;
     font-style: normal;
-    text-align: center;
     color: $darkblue;
-    padding-top: 23px;
 }
 
 
@@ -50,15 +52,16 @@
 .buttonSignUp {
     border-radius: 5px;
     background-color: $darkblue;
-    width: 204px;
-    height: 28px;
+    width: 200px;
     border: none;
     @include mk3Normal;
     color: white;
     margin: 0 auto;
     display: block;
-    margin-top: 25px;
-    padding-top: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    padding: 10px;
 
     &:hover {
         filter: saturate(45%);
@@ -71,6 +74,20 @@
     text-align: center;
 }
 
+#footerCon{
+    background: $darkblue;
+    padding: 20px 40px 20px 40px;
+    
+}
+
+#socialIcons{
+    display: flex;
+    flex-direction: row;
+    img{
+        width: 50px;
+    }
+}
+
 @media screen and (min-width: 428px){
     #footerSignUpContainer h2 {
         text-align: left;
@@ -81,7 +98,7 @@
     #footerSignUpContainer p {
         text-align: left;
         margin-left: 35px;
-        width: 343px;
+        //width: 343px;
 
     }
 

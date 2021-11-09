@@ -2,9 +2,10 @@ h2 {
   font-family: hwt-artz, sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 28px;
+  font-size: 32px;
   letter-spacing: 2px;
   color: #2B3D54;
+  margin-top: 20px;
 }
 
 h3 {
@@ -14,6 +15,8 @@ h3 {
   font-size: 24px;
   letter-spacing: 1.5px;
   color: #60A65F;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 p {
@@ -22,6 +25,9 @@ p {
   font-style: normal;
   font-size: 16px;
   color: #3f3f3f;
+  letter-spacing: .5px;
+  line-height: 20px;
+  margin-top: 20px;
 }
 
 #navContainer {
@@ -149,6 +155,11 @@ nav ul li a:hover {
   }
 }
 
+#benefits {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 #benefitsCon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,30 +168,47 @@ nav ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 .benefit {
-  padding: 0px 0px 0px 0px;
+  padding: 0px 20px 20px 0px;
 }
 
 .benefit img {
-  width: 50%;
+  width: 70%;
 }
 
-#storeIcons img {
-  height: 80px;
+#landingCon {
+  padding: 20px 40px 20px 40px;
 }
 
-@media screen and (min-width: 1200px) {
-  .benefit img {
+#bars {
+  float: right;
+}
+
+@media screen and (min-width: 960px) {
+  #benefitsCon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .benefit {
     width: 30%;
+  }
+  .benefit img {
+    width: 80%;
   }
 }
 
 #footerSignUpContainer {
-  height: 200px;
+  padding: 20px 0px 20px 0px;
   background-color: #60A65F;
 }
 
@@ -189,7 +217,7 @@ nav ul li a:hover {
   height: 61px;
   margin: 0 auto;
   padding: 0;
-  padding-top: 39px;
+  padding-top: 40px;
 }
 
 #iconArrow {
@@ -216,23 +244,23 @@ nav ul li a:hover {
   font-style: normal;
   font-size: 16px;
   color: white;
-  margin-left: 24px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 #footerSignUpContainer h2 {
+  margin-left: 40px;
+  margin-right: 40px;
   font-family: hwt-artz, sans-serif;
   font-weight: 700;
   font-style: normal;
-  text-align: center;
   color: #2B3D54;
-  padding-top: 23px;
 }
 
 .buttonSignUp {
   border-radius: 5px;
   background-color: #2B3D54;
-  width: 204px;
-  height: 28px;
+  width: 200px;
   border: none;
   font-family: objektiv-mk3, sans-serif;
   font-weight: 400;
@@ -241,8 +269,9 @@ nav ul li a:hover {
   color: white;
   margin: 0 auto;
   display: block;
-  margin-top: 25px;
-  padding-top: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 
 .buttonSignUp:hover {
@@ -255,6 +284,25 @@ nav ul li a:hover {
   text-align: center;
 }
 
+#footerCon {
+  background: #2B3D54;
+  padding: 20px 40px 20px 40px;
+}
+
+#socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#socialIcons img {
+  width: 50px;
+}
+
 @media screen and (min-width: 428px) {
   #footerSignUpContainer h2 {
     text-align: left;
@@ -263,7 +311,6 @@ nav ul li a:hover {
   #footerSignUpContainer p {
     text-align: left;
     margin-left: 35px;
-    width: 343px;
   }
   .buttonSignUp {
     margin-left: 35px;
@@ -321,5 +368,35 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
+}
+
+#storeIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 30px;
+}
+
+#storeIcons img {
+  height: 40px;
+}
+
+#downloadCon {
+  padding: 20px 40px 40px 40px;
+}
+
+@media screen and (min-width: 680px) {
+  #storeIcons img {
+    height: 80px;
+  }
+  #storeIcons img:hover {
+    cursor: pointer;
+  }
 }
 /*# sourceMappingURL=main.css.map */
