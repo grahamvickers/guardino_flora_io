@@ -83,6 +83,7 @@
 #socialIcons{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     img{
         width: 50px;
     }
@@ -135,6 +136,17 @@
         margin-left: 266px;
         margin-right: 14px;
     
+    }
+}
+
+@media screen and (min-width: 1008px){
+    #socialIcons{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        img{
+            width: 50px;
+        }
     }
 }
 
