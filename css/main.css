@@ -297,6 +297,9 @@ nav ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #socialIcons img {
@@ -334,6 +337,24 @@ nav ul li a:hover {
   #iconArrow {
     margin-left: 266px;
     margin-right: 14px;
+  }
+}
+
+@media screen and (min-width: 1008px) {
+  #socialIcons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #socialIcons img {
+    width: 50px;
   }
 }
 
