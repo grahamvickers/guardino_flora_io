@@ -24,12 +24,34 @@ body {
 }
 
 
+#storeIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    img{
+        height: 40px;
+    }
+}
+
+#downloadCon{
+    padding: 20px 40px 40px 40px;
+}
+
+
 @media screen and (min-width: 428px) {
 
 }
 
 @media screen and (min-width: 680px) {
-
+    #storeIcons {
+        img{
+            height: 80px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1024px) {

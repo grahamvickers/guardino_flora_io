@@ -1,6 +1,6 @@
 ![](/images/logo_v1.svg)
 
-This is my Ardino website called Flora.io, this is in conjunction with my Interactive Media Specialist program at Fanshawe College. 
+This is my Arduino website called Flora.io, this is in conjunction with my Interactive Media Specialist program at Fanshawe College. 
 
 ## Getting Started
 
@@ -21,7 +21,7 @@ Install through the command line (required):
 ```
 $ git clone https://github.com/grahamvickers/guardino_flora_io
 ```
-Then run the comman by pressing enter/return
+Then run the command by pressing enter/return
 
 
 ## Deployment
@@ -55,4 +55,4 @@ Now in the browser of your choice go to: localhost:3000
 
 ## Acknowledgments
 
-* Big thanks to Marco and John for teaching our class the nessasary tools to complete this project. 
+* Big thanks to Marco and John for teaching our class the necessary tools to complete this project. 
