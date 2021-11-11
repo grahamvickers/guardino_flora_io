@@ -55,4 +55,4 @@ Now in the browser of your choice go to: localhost:3000
 
 ## Acknowledgments
 
-* Big thanks to Marco and John for teaching our class the necessary tools to complete this project. 
+* Big thanks to Marco for teaching our class the necessary tools to complete this project. 
