@@ -50,7 +50,7 @@ Now in the browser of your choice go to: localhost:3000
 
 * **Graham Vickers** - *Design & Build* - [Fanshawe College](https://github.com/grahamvickers)
 * **Zacherie Pereira** - *Design & Build* 
-* **Navjot Singh** - *Design & Build* 
+ 
 
 
 ## Acknowledgments

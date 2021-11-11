@@ -30,6 +30,32 @@ p {
   margin-top: 20px;
 }
 
+label {
+  font-family: objektiv-mk3, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #3f3f3f;
+  letter-spacing: .5px;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border-style: none;
+  max-width: 400px;
+}
+
+select {
+  padding: 5px;
+  border-radius: 5px;
+  border-style: none;
+  max-width: 400px;
+}
+
 #navContainer {
   background-color: #2B3D54;
   padding: 0px 40px 40px 0px;
@@ -61,16 +87,21 @@ p {
           justify-content: center;
 }
 
+#logo2 {
+  display: none;
+}
+
 nav {
   background-color: #2B3D54;
   width: 200px;
-  height: 185px;
+  height: 225px;
   position: absolute;
 }
 
 nav ul {
   margin: 0 auto;
   list-style: none;
+  padding-left: 40px;
 }
 
 nav ul li {
@@ -117,6 +148,9 @@ nav ul li a:hover {
 }
 
 @media screen and (min-width: 1024px) {
+  #logo2 {
+    display: block;
+  }
   #navContainer {
     display: none;
   }
@@ -207,6 +241,17 @@ nav ul li a:hover {
   }
 }
 
+#signupForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 40px 20px 40px;
+}
+
 #footerSignUpContainer {
   padding: 20px 0px 20px 0px;
   background-color: #60A65F;
@@ -259,24 +304,29 @@ nav ul li a:hover {
 
 .buttonSignUp {
   border-radius: 5px;
-  background-color: #2B3D54;
+  border: 2px solid #2B3D54;
+  background: #2B3D54;
   width: 200px;
-  border: none;
   font-family: objektiv-mk3, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
   color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
   margin: 0 auto;
   display: block;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 10px;
+  -webkit-transition: .2 ease-in-out;
+  transition: .2 ease-in-out;
 }
 
 .buttonSignUp:hover {
-  -webkit-filter: saturate(45%);
-          filter: saturate(45%);
+  background: #60A65F;
+  border: 3px solid #2B3D54;
+  color: #2B3D54;
 }
 
 #footerSignUpContainer a {
@@ -359,20 +409,135 @@ nav ul li a:hover {
 }
 
 @media screen and (min-width: 1024px) {
-  #footerSignUpContainer h2 {
-    margin-left: 165px;
-  }
-  #footerSignUpContainer p {
-    margin-left: 165px;
-  }
-  .buttonSignUp {
-    margin-left: 165px;
+  #footerSignUpContainer {
+    padding-left: 40px;
   }
   #footerContainer {
     display: none;
   }
   footer {
     height: auto;
+  }
+}
+
+.aboutSection, .floraTeam {
+  margin: 20px 40px 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutSection h2, .floraTeam h2 {
+  text-align: center;
+}
+
+.aboutSection #center1, .aboutSection #center2, .aboutSection #center3, .floraTeam #center1, .floraTeam #center2, .floraTeam #center3 {
+  color: #60A65F;
+  text-align: center;
+  font-weight: 600;
+}
+
+.floraTeam {
+  text-align: center;
+}
+
+.floraTeam ul {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.floraTeam ul li p {
+  margin-top: 5px;
+}
+
+.floraTeam ul li {
+  margin-top: 10px;
+}
+
+#headerName1, #headerName2, #headerName3 {
+  font-family: hwt-artz, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: #60A65F;
+}
+
+.teamList {
+  display: none;
+}
+
+@media screen and (min-width: 680px) {
+  .aboutSection, .floraTeam {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .aboutSection h2, .floraTeam h2 {
+    text-align: left;
+  }
+  .aboutSection #center1, .aboutSection #center2, .aboutSection #center3, .floraTeam #center1, .floraTeam #center2, .floraTeam #center3 {
+    text-align: left;
+  }
+  .floraTeam ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .teamHov:hover {
+    cursor: pointer;
+  }
+  .teamList {
+    display: block;
+    height: 300px;
+  }
+  .teamList img {
+    width: 200px;
+    float: left;
+    border-radius: 30px;
+    margin-left: 40px;
+    margin-right: 20px;
+  }
+  .teamList h3 {
+    text-align: center;
+  }
+  .teamList P {
+    margin-top: 50px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .aboutSection, .floraTeam {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .aboutSection h2, .floraTeam h2 {
+    text-align: left;
+  }
+  .aboutSection #center1, .aboutSection #center2, .aboutSection #center3, .floraTeam #center1, .floraTeam #center2, .floraTeam #center3 {
+    text-align: left;
+  }
+  .teamList img {
+    margin-left: 100px;
+  }
+  .teamList P {
+    margin-top: 50px;
+    padding-right: 200px;
   }
 }
 
@@ -418,6 +583,12 @@ body {
   }
   #storeIcons img:hover {
     cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #downloadCon {
+    padding: 40px 80px 40px 80px;
   }
 }
 /*# sourceMappingURL=main.css.map */

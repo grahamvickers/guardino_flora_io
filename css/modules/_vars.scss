@@ -44,7 +44,32 @@ p{
     letter-spacing: .5px;
     line-height: 20px;
     margin-top: 20px;
+}
 
+label{
+    font-family: objektiv-mk3, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: $darkgrey; 
+    letter-spacing: .5px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
+    max-width: 400px;
+}
+
+select{
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
+    max-width: 400px;
 }
 
 

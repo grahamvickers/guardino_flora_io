@@ -1,10 +1,15 @@
 // all signUp.html styling here
 
+#signupForm{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px 20px 40px;
+}
 @media screen and (min-width: 428px){
 
 }
 
-@media screen and (min-width: 680px){
+@media screen and (min-width: 1009px){
 
 }
 

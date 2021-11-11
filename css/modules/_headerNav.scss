@@ -22,11 +22,17 @@
     justify-content: center;
 }
 
+
+#logo2 {
+    display: none;
+}
+
+
 nav {
 
     background-color: $darkblue;
     width: 200px;
-    height: 185px;
+    height: 225px;
     // padding 0
     // margin-right: 200px;
     // margin: 0 auto;
@@ -34,6 +40,7 @@ nav {
     ul {
         margin: 0 auto;
         list-style: none;
+        padding-left: 40px;
             li {
                 padding-top: 30px;
 
@@ -90,6 +97,10 @@ nav {
 }
 
 @media screen and (min-width: 1024px){
+    
+    #logo2 {
+        display: block;
+    }
     #navContainer {
         display: none;
     }
