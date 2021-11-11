@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>FLORA.IO</title>
+    <title>FLORA.IO About Us</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="stylesheet" href="https://use.typekit.net/yoq8fif.css">
-    <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+    <!-- <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen"> -->
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
@@ -23,6 +23,7 @@
                 <h2 class="hidden">Main Navigation</h2>
                 <img src="images/logo_v1.svg" alt="FLORA.IO Logo" class="hiddenNavLogo" id="logo2">
                 <ul>
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="#">PRODUCTS</a></li>
                     <li><a href="signup.html">SIGN UP</a></li>
@@ -33,8 +34,64 @@
         <!-- main body content -->
         <main>
             <h2 class="hidden">Main body content below</h2>
+            <img
+                sizes="(max-width: 1200px) 100vw, 1200px"
+                srcset="
+                images/david-von-diemar-JnWfxikjB-s-unsplash_cropped_bza31r_c_scale,w_320.png 320w,
+                images/david-von-diemar-JnWfxikjB-s-unsplash_cropped_bza31r_c_scale,w_704.png 704w,
+                images/david-von-diemar-JnWfxikjB-s-unsplash_cropped_bza31r_c_scale,w_995.png 995w,
+                images/david-von-diemar-JnWfxikjB-s-unsplash_cropped_bza31r_c_scale,w_1200.png 1200w"
+                src="images/david-von-diemar-JnWfxikjB-s-unsplash_cropped_bza31r_c_scale,w_1200.png"
+                alt="FLORA.IO Headquarters">
+            <section class="aboutSection">
+                <h2 class="hidden">About Information Content</h2>
+                <article id="about">
+                    <h2>About Us</h2>
+                    <p id="center1">For over 5 years, FLORA.IO has been the leader in environment plant enhancing equipement.</p>
 
- 
+                    <p>FLORA.IO was established as a Canadian family-owned business in 2016. Through innovation, research, and real-life experience, 
+                        we provide solutions that will help your plants to grow and strive. We develop affordable solutions for large and small scale operations 
+                        and we take pride in our designs and equipment.</p>
+                </article>
+                <article id="vision">
+                    <h2>Our Vision</h2>
+                    <p id="center2">Our vision is Helping Growers Worldwide.</p>
+                </article>
+                <article id="mission">
+                    <h2>Our Mission</h2>
+                    <p id="center3">Our Mission is to supply farmers, big and small, with high-quality products, support and technology.</p>
+
+                    <p>FLORA.IO is invested in our customers’ success. We work with anyone interested in growing their plants efficiently, 
+                        whether you’re a hobby grower, middle school student or business owner.</p>
+                </article>
+            </section>
+            <!-- <img src="images/bars.svg" alt="bars"> -->
+
+
+            <!-- this is the benefits section -->
+            <section class="floraTeam"> 
+                <h2>Meet the FLORA.IO Team</h2>
+                <ul>
+                    <li id="paul" class="teamHov">
+                        <p id="headerName1">Paul Flora</p>
+                        <p>President/Owner</p>
+                    </li>
+                    <li id="mary" class="teamHov">
+                        <p id="headerName2">Mary Green</p>
+                        <p>Sales Associate</p>
+                    </li>
+                    <li id="john" class="teamHov">
+                        <p id="headerName3">John Flowers</p>
+                        <p>Technical Support</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="teamList">
+                <h2 class="hidden">Team List Info Content</h2>
+    
+            </section>
+
             <!-- sign up content -->
             <section id="footerSignUpContainer">
                 <h2>JOIN OUR WAITING LIST!</h2>
@@ -54,9 +111,8 @@
         </main>
 
         <footer>
-            <h2 class="hidden">Footer</h2>
+            <h2 class="hidden">Footer Container</h2>
             <div id="footerContainer">
-                <h2 class="hidden">Footer Container</h2>
                 <img src="images/arrowUp.svg" alt="Arrow Up" class="hiddenFooter" id="iconArrow">
                 <p>BACK TO THE TOP</p>
             </div>
@@ -72,5 +128,6 @@
 
         <script src="js/mobileNav.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/about.js"></script>
     </body>
 </html>

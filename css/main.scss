@@ -4,6 +4,7 @@
 @import 'modules/_home';
 @import 'modules/_signUp';
 @import 'modules/_footer';
+@import 'modules/_about';
 
 
 // all general styling goes below: 
@@ -55,7 +56,9 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-
+    #downloadCon{
+        padding: 40px 80px 40px 80px;
+    }
 }
 
 @media screen and (min-width: 1200px) {

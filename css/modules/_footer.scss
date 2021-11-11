@@ -51,20 +51,23 @@
 
 .buttonSignUp {
     border-radius: 5px;
-    background-color: $darkblue;
+    border: 2px solid $darkblue;
+    background: $darkblue;
     width: 200px;
-    border: none;
     @include mk3Normal;
     color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
     margin: 0 auto;
     display: block;
     margin-top: 20px;
     margin-bottom: 20px;
-
     padding: 10px;
-
+    transition: .2 ease-in-out;
     &:hover {
-        filter: saturate(45%);
+        background: $lightgreen;
+        border: 3px solid $darkblue;
+        color: $darkblue;
     }
 
 }
@@ -151,17 +154,9 @@
 }
 
 @media screen and (min-width: 1024px){
-    #footerSignUpContainer h2 {
-        margin-left: 165px;
+    #footerSignUpContainer {
+         padding-left: 40px;
     
-    }
-
-    #footerSignUpContainer p {
-        margin-left: 165px;
-    }
-
-    .buttonSignUp {
-        margin-left: 165px;
     }
 
     #footerContainer {
